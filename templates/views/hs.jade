@@ -1,0 +1,100 @@
+extends ../layouts/wifidefault
+
+block content
+		section.inventoryContainer
+			.row
+				.tipCard
+					.col-xs-12
+						.tip
+							| hair wash tip - don't rinse and repeat 
+			.row
+				.dealCard
+					.col-xs-12
+						.deal1
+							| protein for your hair @ Rs 350/shot 
+						.deal2
+							| Rs 500/month, any service once a month
+						.deal3
+							| Rs 10,000/year, 12 facials a year
+
+		section.loginContainer
+			.row
+				.dealCard
+					.col-xs-10
+						.inputBox
+							input(type='text', name='wifi_mobile', placeholder='enter mobile # for wifi', data-price='')
+					.col-xs-2
+						.inputBox.goBtn
+							button.btn.btn-default#wifiAccess(type="submit") Go
+					.col-xs-12
+						.checkBox
+							input.icon-checkbox(type="checkbox", id="checkbox1") 
+							label.terms(for="checkbox1")
+								span.glyphicon.glyphicon-ok.unchecked
+								span.glyphicon.glyphicon-notok.checked
+								| &nbsp;&nbsp;accept terms & conditions
+					.col-xs-12
+						#wifiMobileCodeMessage.textbox-label-style.error-style
+
+		section.OTPContainer.no-display
+			.row
+				.dealCard
+					.col-xs-10
+						.inputBox
+							input(type='text', name='wifi_access_code', placeholder='enter OTP #', data-price='')
+					.col-xs-2
+						.inputBox.goBtn
+							button.btn.btn-default#enterOTP(type="submit") Go
+					.col-xs-12
+						.noOTPText
+							| No OTP yet. Click <a href="">here </a>to resend.
+						//.checkBox
+							input.icon-checkbox(type="checkbox", id="checkbox1") 
+							label.terms(for="checkbox1")
+								span.glyphicon.glyphicon-ok.unchecked
+								span.glyphicon.glyphicon-notok.checked
+								| &nbsp;&nbsp;accept terms & conditions
+					.col-xs-12
+						#wifiAccessCodeMessage.textbox-label-style.error-style
+
+		section.successContainer.no-display
+			.row
+				.col-xs-12
+					.wifiSuccess
+						| AWESOME .. enjoy the wifi. Powered by #{primeOwner}
+			
+
+		
+
+					
+			//.card
+						| Abracabadra
+						br
+						| stationery @ 20% off
+
+			//.row
+				.col-xs-6
+					.card
+						| Asian Wok
+						br
+						| 20% off
+
+				.col-xs-6
+					.card
+						| Abracabadra
+						br
+						| stationery @ 20% off
+			//.row
+				.col-xs-6
+					.card
+						| eZone - powai
+						br
+						| 20% off
+
+				.col-xs-6
+					.card
+						| haiko
+						br
+						| 20% off
+						
+
